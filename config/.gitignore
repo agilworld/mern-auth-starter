@@ -1,0 +1,9 @@
+# Exclude folders
+
+client
+.vscode
+node_modules
+
+# Exclude files
+.env
+package-lock.json

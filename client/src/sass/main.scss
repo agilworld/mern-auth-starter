@@ -1,0 +1,86 @@
+$font-size-base: 0.96rem;
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #F0166F
+);
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap';
+//@import 'style';
+
+body {
+  background: #eee;
+}
+#content {
+  margin-bottom:70px;
+}
+#bodyLogin {
+  max-width: 400px;
+  margin:0 auto;
+  padding-top:100px;
+  .login-bg {
+    background:#fff;
+    position: relative;
+  }
+}
+.spinner-container {
+  position: absolute;
+  top:0;
+  left:0;
+  /*background: rgba(255,255,255,0.85);*/
+  width: 100%;
+  height: 100%;
+  z-index:1100;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+}
+
+.exception-container {
+  position: fixed;
+  top:0;
+  left:0;
+  background: rgba(255,255,255,0.85);
+  width: 100%;
+  height: 100%;
+  z-index:1100;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom:0;
+}
+@media (max-width: 575.98px) { 
+  .bottombar {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index:1090;
+    box-shadow: 0 -0.15rem 0.55rem rgba(0,0,0,.075)!important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .bottombar {
+    display: none;
+  }
+}
+
