@@ -21,10 +21,7 @@
 [context.production]
   publish = "client/build/"
   command = "npm run client"
-  environment = { 
-      NODE_VERSION = "11.3.0",
-      NPM_VERSION = "6.4.1"
-    }
+  environment = { NODE_VERSION = "11.3.0", NPM_VERSION = "6.4.1" }
 
 # Deploy Preview context: all deploys resulting from a pull/merge request will 
 # inherit these settings.
