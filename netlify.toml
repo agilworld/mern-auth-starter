@@ -13,7 +13,7 @@
   publish = "client/build/"
 
   # Default build command.
-  command = "echo 'default context'"
+  command = "npm run client"
 
   # Directory with the lambda functions to deploy to AWS.
   functions = "functions/"
