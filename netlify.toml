@@ -13,14 +13,14 @@
   publish = "client/build/"
 
   # Default build command.
-  command = "npm run netlify"
+  command = "npm run client-install && npm run client-build"
 
   # Directory with the lambda functions to deploy to AWS.
   functions = "functions/"
 
 [context.production]
   publish = "client/build/"
-  command = "npm run netlify"
+  command = "npm run client-install && npm run client-build"
   environment = { NODE_VERSION = "11.3.0", NPM_VERSION = "6.4.1", REACT_APP_API_URL = "http://localhost:5000/api/users/" }
 
 # Deploy Preview context: all deploys resulting from a pull/merge request will 

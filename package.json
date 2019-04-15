@@ -2,13 +2,13 @@
   "name": "batamdevnetworks",
   "version": "1.0.0",
   "description": "Social networks for batam developer",
-  "main": "server.js",
+  "main": "functions/index.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server",
     "server": "nodemon functions/index.js",
     "client": "npm start --prefix client",
-    "client-build": "npm netlify-start --prefix client",
+    "client-build": "npm netlify-build --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "netlify": "npm run client-install && npm run client-build"
   },
